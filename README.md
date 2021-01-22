@@ -1,2 +1,4 @@
 # codewars
-Codewars solutions (Python)
+Codewars solutions in Python
+
+https://www.codewars.com/users/k8isdead
