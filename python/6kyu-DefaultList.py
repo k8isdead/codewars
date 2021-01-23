@@ -32,6 +32,22 @@ class DefaultList:
     
     def append(self, value):
         self.list.append(value)
+       
+"""
+Another solution using super()
+
+class DefaultList(list):
+
+    def __init__(self, lst, default):
+        self.default = default
+        super().__init__(lst)
+
+    def __getitem__(self, i):
+        try:
+            return super().__getitem__(i)
+        except IndexError:
+            return self.default
+"""
         
     def remove(self, value):
         if value in self.list:
